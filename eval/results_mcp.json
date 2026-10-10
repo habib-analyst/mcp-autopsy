@@ -1,0 +1,487 @@
+{
+  "summary": {
+    "n_traces": 42,
+    "scenario": "debug",
+    "seed0": 9000,
+    "attribution_exact_step": 1.0,
+    "resume_verdict_acc": 1.0,
+    "clean_false_positive_rate": 0.0,
+    "by_fault": {
+      "clean": {
+        "n": 6,
+        "exact": 1.0,
+        "vacc": 1.0
+      },
+      "loop_stall": {
+        "n": 6,
+        "exact": 1.0,
+        "vacc": 1.0
+      },
+      "plan_drift": {
+        "n": 6,
+        "exact": 1.0,
+        "vacc": 1.0
+      },
+      "poison_injection": {
+        "n": 6,
+        "exact": 1.0,
+        "vacc": 1.0
+      },
+      "premature_termination": {
+        "n": 6,
+        "exact": 1.0,
+        "vacc": 1.0
+      },
+      "tool_misuse": {
+        "n": 6,
+        "exact": 1.0,
+        "vacc": 1.0
+      },
+      "transient": {
+        "n": 6,
+        "exact": 1.0,
+        "vacc": 1.0
+      }
+    },
+    "latency_s": {
+      "diagnose_trace": {
+        "p50": 0.02,
+        "p95": 0.036
+      },
+      "resume_verdict": {
+        "p50": 0.018,
+        "p95": 0.031
+      },
+      "heal_job_flaky": 0.585
+    },
+    "heal_job": {
+      "flaky_recovered": true,
+      "flaky_attempts": 2,
+      "dead_recovered": false,
+      "dead_attempts": 2,
+      "dead_final_failure": "unknown:exit=1"
+    }
+  },
+  "rows": [
+    {
+      "fault": "poison_injection",
+      "seed": 9000,
+      "true_culprit": 7,
+      "pred_culprit": 7,
+      "exact_hit": true,
+      "expected_verdict": "DO_NOT_RESUME",
+      "pred_verdict": "DO_NOT_RESUME",
+      "report_chars": 1011
+    },
+    {
+      "fault": "poison_injection",
+      "seed": 9001,
+      "true_culprit": 5,
+      "pred_culprit": 5,
+      "exact_hit": true,
+      "expected_verdict": "DO_NOT_RESUME",
+      "pred_verdict": "DO_NOT_RESUME",
+      "report_chars": 1011
+    },
+    {
+      "fault": "poison_injection",
+      "seed": 9002,
+      "true_culprit": 7,
+      "pred_culprit": 7,
+      "exact_hit": true,
+      "expected_verdict": "DO_NOT_RESUME",
+      "pred_verdict": "DO_NOT_RESUME",
+      "report_chars": 1011
+    },
+    {
+      "fault": "poison_injection",
+      "seed": 9003,
+      "true_culprit": 10,
+      "pred_culprit": 10,
+      "exact_hit": true,
+      "expected_verdict": "DO_NOT_RESUME",
+      "pred_verdict": "DO_NOT_RESUME",
+      "report_chars": 1012
+    },
+    {
+      "fault": "poison_injection",
+      "seed": 9004,
+      "true_culprit": 7,
+      "pred_culprit": 7,
+      "exact_hit": true,
+      "expected_verdict": "DO_NOT_RESUME",
+      "pred_verdict": "DO_NOT_RESUME",
+      "report_chars": 1011
+    },
+    {
+      "fault": "poison_injection",
+      "seed": 9005,
+      "true_culprit": 7,
+      "pred_culprit": 7,
+      "exact_hit": true,
+      "expected_verdict": "DO_NOT_RESUME",
+      "pred_verdict": "DO_NOT_RESUME",
+      "report_chars": 1011
+    },
+    {
+      "fault": "tool_misuse",
+      "seed": 9100,
+      "true_culprit": 9,
+      "pred_culprit": 9,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 872
+    },
+    {
+      "fault": "tool_misuse",
+      "seed": 9101,
+      "true_culprit": 9,
+      "pred_culprit": 9,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 872
+    },
+    {
+      "fault": "tool_misuse",
+      "seed": 9102,
+      "true_culprit": 9,
+      "pred_culprit": 9,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 872
+    },
+    {
+      "fault": "tool_misuse",
+      "seed": 9103,
+      "true_culprit": 9,
+      "pred_culprit": 9,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 872
+    },
+    {
+      "fault": "tool_misuse",
+      "seed": 9104,
+      "true_culprit": 9,
+      "pred_culprit": 9,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 872
+    },
+    {
+      "fault": "tool_misuse",
+      "seed": 9105,
+      "true_culprit": 9,
+      "pred_culprit": 9,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 872
+    },
+    {
+      "fault": "loop_stall",
+      "seed": 9200,
+      "true_culprit": 2,
+      "pred_culprit": 2,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 1339
+    },
+    {
+      "fault": "loop_stall",
+      "seed": 9201,
+      "true_culprit": 2,
+      "pred_culprit": 2,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 1339
+    },
+    {
+      "fault": "loop_stall",
+      "seed": 9202,
+      "true_culprit": 2,
+      "pred_culprit": 2,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 1339
+    },
+    {
+      "fault": "loop_stall",
+      "seed": 9203,
+      "true_culprit": 2,
+      "pred_culprit": 2,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 1339
+    },
+    {
+      "fault": "loop_stall",
+      "seed": 9204,
+      "true_culprit": 2,
+      "pred_culprit": 2,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 1339
+    },
+    {
+      "fault": "loop_stall",
+      "seed": 9205,
+      "true_culprit": 2,
+      "pred_culprit": 2,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 1339
+    },
+    {
+      "fault": "plan_drift",
+      "seed": 9300,
+      "true_culprit": 9,
+      "pred_culprit": 9,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 1895
+    },
+    {
+      "fault": "plan_drift",
+      "seed": 9301,
+      "true_culprit": 9,
+      "pred_culprit": 9,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 1895
+    },
+    {
+      "fault": "plan_drift",
+      "seed": 9302,
+      "true_culprit": 9,
+      "pred_culprit": 9,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 1895
+    },
+    {
+      "fault": "plan_drift",
+      "seed": 9303,
+      "true_culprit": 9,
+      "pred_culprit": 9,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 1895
+    },
+    {
+      "fault": "plan_drift",
+      "seed": 9304,
+      "true_culprit": 9,
+      "pred_culprit": 9,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 1895
+    },
+    {
+      "fault": "plan_drift",
+      "seed": 9305,
+      "true_culprit": 9,
+      "pred_culprit": 9,
+      "exact_hit": true,
+      "expected_verdict": "RESUME_WITH_FIX",
+      "pred_verdict": "RESUME_WITH_FIX",
+      "report_chars": 1895
+    },
+    {
+      "fault": "premature_termination",
+      "seed": 9400,
+      "true_culprit": 4,
+      "pred_culprit": 4,
+      "exact_hit": true,
+      "expected_verdict": "SAFE_TO_RESUME",
+      "pred_verdict": "SAFE_TO_RESUME",
+      "report_chars": 1016
+    },
+    {
+      "fault": "premature_termination",
+      "seed": 9401,
+      "true_culprit": 4,
+      "pred_culprit": 4,
+      "exact_hit": true,
+      "expected_verdict": "SAFE_TO_RESUME",
+      "pred_verdict": "SAFE_TO_RESUME",
+      "report_chars": 1016
+    },
+    {
+      "fault": "premature_termination",
+      "seed": 9402,
+      "true_culprit": 4,
+      "pred_culprit": 4,
+      "exact_hit": true,
+      "expected_verdict": "SAFE_TO_RESUME",
+      "pred_verdict": "SAFE_TO_RESUME",
+      "report_chars": 1016
+    },
+    {
+      "fault": "premature_termination",
+      "seed": 9403,
+      "true_culprit": 4,
+      "pred_culprit": 4,
+      "exact_hit": true,
+      "expected_verdict": "SAFE_TO_RESUME",
+      "pred_verdict": "SAFE_TO_RESUME",
+      "report_chars": 1016
+    },
+    {
+      "fault": "premature_termination",
+      "seed": 9404,
+      "true_culprit": 4,
+      "pred_culprit": 4,
+      "exact_hit": true,
+      "expected_verdict": "SAFE_TO_RESUME",
+      "pred_verdict": "SAFE_TO_RESUME",
+      "report_chars": 1016
+    },
+    {
+      "fault": "premature_termination",
+      "seed": 9405,
+      "true_culprit": 4,
+      "pred_culprit": 4,
+      "exact_hit": true,
+      "expected_verdict": "SAFE_TO_RESUME",
+      "pred_verdict": "SAFE_TO_RESUME",
+      "report_chars": 1016
+    },
+    {
+      "fault": "transient",
+      "seed": 9500,
+      "true_culprit": 10,
+      "pred_culprit": 10,
+      "exact_hit": true,
+      "expected_verdict": "SAFE_TO_RESUME",
+      "pred_verdict": "SAFE_TO_RESUME",
+      "report_chars": 920
+    },
+    {
+      "fault": "transient",
+      "seed": 9501,
+      "true_culprit": 10,
+      "pred_culprit": 10,
+      "exact_hit": true,
+      "expected_verdict": "SAFE_TO_RESUME",
+      "pred_verdict": "SAFE_TO_RESUME",
+      "report_chars": 920
+    },
+    {
+      "fault": "transient",
+      "seed": 9502,
+      "true_culprit": 10,
+      "pred_culprit": 10,
+      "exact_hit": true,
+      "expected_verdict": "SAFE_TO_RESUME",
+      "pred_verdict": "SAFE_TO_RESUME",
+      "report_chars": 920
+    },
+    {
+      "fault": "transient",
+      "seed": 9503,
+      "true_culprit": 10,
+      "pred_culprit": 10,
+      "exact_hit": true,
+      "expected_verdict": "SAFE_TO_RESUME",
+      "pred_verdict": "SAFE_TO_RESUME",
+      "report_chars": 920
+    },
+    {
+      "fault": "transient",
+      "seed": 9504,
+      "true_culprit": 10,
+      "pred_culprit": 10,
+      "exact_hit": true,
+      "expected_verdict": "SAFE_TO_RESUME",
+      "pred_verdict": "SAFE_TO_RESUME",
+      "report_chars": 920
+    },
+    {
+      "fault": "transient",
+      "seed": 9505,
+      "true_culprit": 10,
+      "pred_culprit": 10,
+      "exact_hit": true,
+      "expected_verdict": "SAFE_TO_RESUME",
+      "pred_verdict": "SAFE_TO_RESUME",
+      "report_chars": 920
+    },
+    {
+      "fault": "clean",
+      "seed": 9600,
+      "true_culprit": null,
+      "pred_culprit": null,
+      "exact_hit": true,
+      "expected_verdict": "NO_FAILURE_FOUND",
+      "pred_verdict": "NO_FAILURE_FOUND",
+      "report_chars": 252
+    },
+    {
+      "fault": "clean",
+      "seed": 9601,
+      "true_culprit": null,
+      "pred_culprit": null,
+      "exact_hit": true,
+      "expected_verdict": "NO_FAILURE_FOUND",
+      "pred_verdict": "NO_FAILURE_FOUND",
+      "report_chars": 252
+    },
+    {
+      "fault": "clean",
+      "seed": 9602,
+      "true_culprit": null,
+      "pred_culprit": null,
+      "exact_hit": true,
+      "expected_verdict": "NO_FAILURE_FOUND",
+      "pred_verdict": "NO_FAILURE_FOUND",
+      "report_chars": 252
+    },
+    {
+      "fault": "clean",
+      "seed": 9603,
+      "true_culprit": null,
+      "pred_culprit": null,
+      "exact_hit": true,
+      "expected_verdict": "NO_FAILURE_FOUND",
+      "pred_verdict": "NO_FAILURE_FOUND",
+      "report_chars": 252
+    },
+    {
+      "fault": "clean",
+      "seed": 9604,
+      "true_culprit": null,
+      "pred_culprit": null,
+      "exact_hit": true,
+      "expected_verdict": "NO_FAILURE_FOUND",
+      "pred_verdict": "NO_FAILURE_FOUND",
+      "report_chars": 252
+    },
+    {
+      "fault": "clean",
+      "seed": 9605,
+      "true_culprit": null,
+      "pred_culprit": null,
+      "exact_hit": true,
+      "expected_verdict": "NO_FAILURE_FOUND",
+      "pred_verdict": "NO_FAILURE_FOUND",
+      "report_chars": 252
+    }
+  ]
+}

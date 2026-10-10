@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-autopsy"
+version = "0.1.0"
+description = "Agent forensics as MCP tools: post-mortem diagnosis and self-healing supervision for Claude Code / Cursor"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Habib Ur Rehman" }]
+dependencies = ["mcp>=1.0,<2"]
+
+[project.scripts]
+mcp-autopsy = "mcp_autopsy.server:main"
+
+[project.urls]
+Homepage = "https://github.com/habib-analyst/mcp-autopsy"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mcp_autopsy", "agent_autopsy", "agent_heal"]

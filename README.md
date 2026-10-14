@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)] [![GitHub stars](https://img.shields.io/github/stars/habib-analyst/mcp-autopsy.svg)] [![M8ven Score](https://m8ven.ai/badge/mcp/habib-analyst/mcp-autopsy)](https://m8ven.ai/mcp/habib-analyst/mcp-autopsy?s=readme)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)] [![GitHub stars](https://img.shields.io/github/stars/habib-analyst/mcp-autopsy.svg)] [![M8ven Score](https://m8ven.ai/badge/mcp/habib-analyst-mcp-autopsy-6qh9jz?v=7f5473860bf3ed8bc81efa44a98bc8d0)](https://m8ven.ai/mcp/habib-analyst-mcp-autopsy-6qh9jz?s=readme)
 
 # mcp-autopsy
 

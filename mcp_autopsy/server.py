@@ -15,6 +15,7 @@ import tempfile
 from typing import List
 
 from mcp.server.fastmcp import FastMCP
+from mcp.types import ToolAnnotations
 
 from .core import diagnose as _diagnose
 from .core import verdict as _verdict
@@ -23,7 +24,10 @@ from .core import heal as _heal
 mcp = FastMCP("mcp-autopsy")
 
 
-@mcp.tool()
+@mcp.tool(annotations=ToolAnnotations(
+    readOnlyHint=True, destructiveHint=False,
+    idempotentHint=True, openWorldHint=False,
+))
 def diagnose_trace(trace_jsonl: str) -> str:
     """Post-mortem forensics for a failed agent run.
 
@@ -37,7 +41,10 @@ def diagnose_trace(trace_jsonl: str) -> str:
     return _diagnose(trace_jsonl)
 
 
-@mcp.tool()
+@mcp.tool(annotations=ToolAnnotations(
+    readOnlyHint=True, destructiveHint=False,
+    idempotentHint=True, openWorldHint=False,
+))
 def resume_verdict(trace_jsonl: str) -> dict:
     """Machine-readable autopsy for a failed agent trace.
 
@@ -50,7 +57,12 @@ def resume_verdict(trace_jsonl: str) -> dict:
     return _verdict(trace_jsonl)
 
 
-@mcp.tool()
+@mcp.tool(annotations=ToolAnnotations(
+    # Executes arbitrary user-provided commands: NOT read-only, destructive,
+    # non-idempotent, and the command may reach the network.
+    readOnlyHint=False, destructiveHint=True,
+    idempotentHint=False, openWorldHint=True,
+))
 def heal_job(command: List[str], job_id: str, policy: str = "auto",
              max_attempts: int = 3, attempt_timeout_s: float = 60.0) -> dict:
     """Run a command under the self-healing supervisor.
